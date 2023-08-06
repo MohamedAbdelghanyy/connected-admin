@@ -11,13 +11,10 @@ import { useTypedSelector } from '../store'
 
 import { AppSidebarNav } from './AppSidebarNav'
 
-import CIcon from '@coreui/icons-react'
-
 import SimpleBar from 'simplebar-react'
 import 'simplebar/dist/simplebar.min.css'
 
 import connectedLogoWhiteLG from '../assets/images/connected/connected-w-lg.png'
-import { sygnet } from '../assets/brand/sygnet'
 // sidebar nav config
 import navigation from '../_nav'
 
