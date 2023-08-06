@@ -8,5 +8,5 @@
 'use strict'
 
 module.exports = {
-  collectCoverageFrom: ['src/**/*.{js,jsx}', '!**/*index.js'],
+  collectCoverageFrom: ['src/**/*.{ts,tsx}', '!**/*index.ts'],
 }
