@@ -2,7 +2,7 @@
   "name": "@coreui/coreui-pro-react-admin-template",
   "version": "4.7.0",
   "description": "CoreUI PRO React Admin Template",
-  "homepage": ".",
+  "homepage": "https://mohamedabdelghanyy.github.io/connected-admin",
   "bugs": {
     "url": "https://github.com/coreui/coreui-pro-react-admin-template/issues"
   },
@@ -20,7 +20,8 @@
     "test": "react-scripts test",
     "test:cov": "npm test -- --coverage --watchAll=false",
     "test:debug": "react-scripts --inspect-brk test --runInBand",
-    "zip": "git archive -o coreui-pro-react-admin-template-v$npm_package_version.zip -9 HEAD"
+    "zip": "git archive -o coreui-pro-react-admin-template-v$npm_package_version.zip -9 HEAD",
+    "gh-deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@coreui/chartjs": "^3.1.2",
@@ -53,6 +54,7 @@
     "@testing-library/user-event": "^14.4.3",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "gh-pages": "^5.0.0",
     "prettier": "2.8.8",
     "react-scripts": "5.0.1",
     "sass": "1.63.6",
