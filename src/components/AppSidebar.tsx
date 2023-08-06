@@ -37,12 +37,17 @@ const AppSidebar = () => {
     >
       <CSidebarBrand className="d-none d-md-flex">
         <img
-          alt="connected-logo"
           className="sidebar-brand-full"
           src={connectedLogoWhiteLG}
+          alt="connected-logo"
           height={35}
         />
-        <CIcon className="sidebar-brand-narrow" icon={sygnet} height={35} />
+        <img
+          className="sidebar-brand-narrow"
+          src={connectedLogoWhiteLG}
+          alt="connected-logo"
+          height={35}
+        />
       </CSidebarBrand>
       <CSidebarNav>
         <SimpleBar>
