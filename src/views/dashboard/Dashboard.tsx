@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Dashboard = (): JSX.Element => {
-  return <>Hello World!</>
+  return <>Welcome!</>
 }
 
 export default Dashboard

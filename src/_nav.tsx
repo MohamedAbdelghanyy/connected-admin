@@ -1,5 +1,5 @@
 import React from 'react'
-import { cilSpeedometer } from '@coreui/icons'
+import { cilSpeedometer, cilUser, cilFile, cilSitemap } from '@coreui/icons'
 import CIcon from '@coreui/icons-react'
 import { CNavItem } from '@coreui/react-pro'
 import { ElementType } from 'react'
@@ -23,16 +23,34 @@ const _nav = [
     component: CNavItem,
     name: 'Dashboard',
     icon: <CIcon icon={cilSpeedometer} customClassName="nav-icon" />,
-    badge: {
-      color: 'info-gradient',
-      text: 'NEW',
-    },
     to: '/dashboard',
+  },
+  {
+    component: CNavItem,
+    name: 'Users',
+    icon: <CIcon icon={cilUser} customClassName="nav-icon" />,
+    to: '/users',
+  },
+  {
+    component: CNavItem,
+    name: 'Products',
+    icon: <CIcon icon={cilFile} customClassName="nav-icon" />,
+    to: '/products',
+  },
+  {
+    component: CNavItem,
+    name: 'Categories',
+    icon: <CIcon icon={cilSitemap} customClassName="nav-icon" />,
+    to: '/categories',
   },
   {
     component: CNavItem,
     name: 'Blank',
     icon: <CIcon icon={cilSpeedometer} customClassName="nav-icon" />,
+    badge: {
+      color: 'info-gradient',
+      text: 'NEW',
+    },
     to: '/blank',
   },
 ]

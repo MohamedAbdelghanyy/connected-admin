@@ -1,4 +1,7 @@
 import React, { ReactNode } from 'react'
+import Users from './views/users/Users'
+import Products from './views/products/Products'
+import Categories from './views/categories/Categories'
 
 export type route = {
   component?: ReactNode
@@ -17,6 +20,9 @@ const Blank = React.lazy(() => import('./views/blank/Blank'))
 const routes = [
   { path: '/', name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },
+  { path: '/users', name: 'Users', component: Users },
+  { path: '/products', name: 'Products', component: Products },
+  { path: '/categories', name: 'Categories', component: Categories },
   { path: '/blank', name: 'Blank', component: Blank },
 ]
 
