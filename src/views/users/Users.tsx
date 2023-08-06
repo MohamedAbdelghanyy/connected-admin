@@ -97,10 +97,10 @@ const Users = (): JSX.Element => {
                     </CTableHeaderCell>
                     <CTableHeaderCell>User</CTableHeaderCell>
                     <CTableHeaderCell className="text-center">
-                      Location
+                      Phone Number
                     </CTableHeaderCell>
                     <CTableHeaderCell className="text-center">
-                      Phone Number
+                      Location
                     </CTableHeaderCell>
                     <CTableHeaderCell className="text-center">
                       Status
