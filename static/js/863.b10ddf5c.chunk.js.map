@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/863.b10ddf5c.chunk.js","mappings":"yNAMA,UAJcA,KACLC,EAAAA,EAAAA,KAAAC,EAAAA,SAAA,G","sources":["views/blank/Blank.tsx"],"sourcesContent":["import React from 'react'\n\nconst Blank = (): JSX.Element => {\n  return <></>\n}\n\nexport default Blank\n"],"names":["Blank","_jsx","_Fragment"],"sourceRoot":""}
