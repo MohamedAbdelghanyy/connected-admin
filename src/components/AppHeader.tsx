@@ -30,8 +30,9 @@ import {
   AppHeaderDropdownTasks,
 } from './header/index'
 
-import { logo } from '../assets/images/brand/logo'
 import { Context } from 'vm'
+
+import connectedLogoDarkLG from '../assets/images/connected/connected-dark-lg.png'
 
 const AppHeader = () => {
   const dispatch = useDispatch()
@@ -55,7 +56,7 @@ const AppHeader = () => {
           <CIcon icon={cilMenu} size="lg" />
         </CHeaderToggler>
         <CHeaderBrand className="mx-auto d-md-none">
-          <CIcon icon={logo} height={48} />
+          <img src={connectedLogoDarkLG} alt="connected-logo" height={48} />
         </CHeaderBrand>
         <CHeaderNav className="d-none d-md-flex me-auto">
           <CNavItem>
