@@ -107,11 +107,6 @@ const _nav = [
     ],
   },
   {
-    component: CNavTitle,
-    name: 'Merchants',
-    to: '#',
-  },
-  {
     component: CNavGroup,
     name: 'Merchants',
     to: '#',
@@ -133,7 +128,7 @@ const _nav = [
   },
   {
     component: CNavTitle,
-    name: 'Dashboard 2',
+    name: 'Catalog',
     to: '#',
   },
   {
