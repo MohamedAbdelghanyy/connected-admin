@@ -1,8 +1,9 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { useDispatch } from 'react-redux'
-import { useTypedSelector } from '../store'
+import { useSelector, useDispatch } from 'react-redux'
 import {
+  CButtonGroup,
+  CFormCheck,
   CContainer,
   CHeader,
   CHeaderBrand,
@@ -12,16 +13,37 @@ import {
   CNavLink,
   CNavItem,
 } from '@coreui/react-pro'
-import { cilApplicationsSettings, cilMenu } from '@coreui/icons'
 import CIcon from '@coreui/icons-react'
+import {
+  cilApplicationsSettings,
+  cilMenu,
+  cilMoon,
+  cilSun,
+} from '@coreui/icons'
 
 import { AppBreadcrumb } from './index'
-import { logo } from '../assets/brand/logo'
 
-const AppHeader = (): JSX.Element => {
+import {
+  AppHeaderDropdown,
+  AppHeaderDropdownMssg,
+  AppHeaderDropdownNotif,
+  AppHeaderDropdownTasks,
+} from './header/index'
+
+import { logo } from '../assets/images/brand/logo'
+import { Context } from 'vm'
+
+const AppHeader = () => {
   const dispatch = useDispatch()
-  const sidebarShow = useTypedSelector((state) => state.sidebarShow)
-  const asideShow = useTypedSelector((state) => state.asideShow)
+
+  const theme = useSelector((state: Context) => state.theme)
+
+  theme === 'dark'
+    ? document.body.classList.add('dark-theme')
+    : document.body.classList.remove('dark-theme')
+
+  const sidebarShow = useSelector((state: Context) => state.sidebarShow)
+  const asideShow = useSelector((state: Context) => state.asideShow)
 
   return (
     <CHeader position="sticky" className="mb-4">
@@ -37,10 +59,42 @@ const AppHeader = (): JSX.Element => {
         </CHeaderBrand>
         <CHeaderNav className="d-none d-md-flex me-auto">
           <CNavItem>
-            <CNavLink to="/dashboard" component={NavLink}>
-              {/*Navigation*/}
+            <CNavLink to="/" component={NavLink}>
+              Connected VIP Assitant
             </CNavLink>
           </CNavItem>
+        </CHeaderNav>
+        <CHeaderNav className="ms-auto me-4">
+          <CButtonGroup aria-label="Theme switch">
+            <CFormCheck
+              type="radio"
+              button={{ color: 'primary' }}
+              name="theme-switch"
+              id="btn-light-theme"
+              autoComplete="off"
+              label={<CIcon icon={cilSun} />}
+              checked={theme === 'default'}
+              onChange={() => dispatch({ type: 'set', theme: 'light' })}
+            />
+            <CFormCheck
+              type="radio"
+              button={{ color: 'primary' }}
+              name="theme-switch"
+              id="btn-dark-theme"
+              autoComplete="off"
+              label={<CIcon icon={cilMoon} />}
+              checked={theme === 'dark'}
+              onChange={() => dispatch({ type: 'set', theme: 'dark' })}
+            />
+          </CButtonGroup>
+        </CHeaderNav>
+        <CHeaderNav>
+          <AppHeaderDropdownNotif />
+          <AppHeaderDropdownTasks />
+          <AppHeaderDropdownMssg />
+        </CHeaderNav>
+        <CHeaderNav className="ms-3 me-4">
+          <AppHeaderDropdown />
         </CHeaderNav>
         <CHeaderToggler
           className="px-md-0 me-md-3"

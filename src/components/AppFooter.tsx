@@ -3,19 +3,13 @@ import { CFooter } from '@coreui/react-pro'
 
 const AppFooter = () => {
   return (
-    <CFooter>
+    <CFooter
+      style={{
+        justifyContent: 'center',
+      }}
+    >
       <div>
-        <span className="ms-1">&copy; 2023 Connected VIP Assistant.</span>
-      </div>
-      <div className="ms-auto">
-        <span className="me-1">Powered by</span>
-        <a
-          href="https://coreui.io/react"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          CoreUI for React
-        </a>
+        <span>&copy; 2023 Connected VIP Assistant.</span>
       </div>
     </CFooter>
   )

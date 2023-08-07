@@ -53,12 +53,12 @@ const _nav = [
   {
     component: CNavTitle,
     name: 'Dashboard',
-    to: '#',
+    to: '/',
   },
   {
     component: CNavGroup,
     name: 'Dashboard',
-    to: '#',
+    to: '/',
     icon: <CIcon icon={cilPuzzle} customClassName="nav-icon" />,
     items: [
       {
@@ -78,12 +78,12 @@ const _nav = [
   {
     component: CNavTitle,
     name: 'Customers',
-    to: '#',
+    to: '/',
   },
   {
     component: CNavGroup,
     name: 'Customers',
-    to: '#',
+    to: '/',
     icon: <CIcon icon={cilPeople} customClassName="nav-icon" />,
     items: [
       {
@@ -109,7 +109,7 @@ const _nav = [
   {
     component: CNavGroup,
     name: 'Merchants',
-    to: '#',
+    to: '/',
     icon: <CIcon icon={cilPeople} customClassName="nav-icon" />,
     items: [
       {
@@ -129,12 +129,12 @@ const _nav = [
   {
     component: CNavTitle,
     name: 'Catalog',
-    to: '#',
+    to: '/',
   },
   {
     component: CNavGroup,
     name: 'Items',
-    to: '#',
+    to: '/',
     icon: <CIcon icon={cilColumns} customClassName="nav-icon" />,
     items: [
       {
@@ -154,7 +154,7 @@ const _nav = [
   {
     component: CNavGroup,
     name: 'Categories',
-    to: '#',
+    to: '/',
     icon: <CIcon icon={cilGrid} customClassName="nav-icon" />,
     items: [
       {
@@ -174,7 +174,7 @@ const _nav = [
   {
     component: CNavGroup,
     name: 'Highlights',
-    to: '#',
+    to: '/',
     icon: <CIcon icon={cilHighligt} customClassName="nav-icon" />,
     items: [
       {
@@ -194,7 +194,7 @@ const _nav = [
   {
     component: CNavGroup,
     name: 'Brands',
-    to: '#',
+    to: '/',
     icon: <CIcon icon={cil3d} customClassName="nav-icon" />,
     items: [
       {
@@ -214,7 +214,7 @@ const _nav = [
   {
     component: CNavGroup,
     name: 'Ads',
-    to: '#',
+    to: '/',
     icon: <CIcon icon={cilBolt} customClassName="nav-icon" />,
     items: [
       {
@@ -234,7 +234,7 @@ const _nav = [
   {
     component: CNavGroup,
     name: 'Product Tags',
-    to: '#',
+    to: '/',
     icon: <CIcon icon={cilTags} customClassName="nav-icon" />,
     items: [
       {
@@ -254,7 +254,7 @@ const _nav = [
   {
     component: CNavGroup,
     name: 'Topics',
-    to: '#',
+    to: '/',
     icon: <CIcon icon={cilSpeech} customClassName="nav-icon" />,
     items: [
       {
@@ -274,12 +274,12 @@ const _nav = [
   {
     component: CNavTitle,
     name: 'Marketing',
-    to: '#',
+    to: '/',
   },
   {
     component: CNavGroup,
     name: 'Notifications',
-    to: '#',
+    to: '/',
     icon: <CIcon icon={cilAudio} customClassName="nav-icon" />,
     items: [
       {
@@ -305,7 +305,7 @@ const _nav = [
   {
     component: CNavGroup,
     name: 'Integrations',
-    to: '#',
+    to: '/',
     icon: <CIcon icon={cilPeople} customClassName="nav-icon" />,
     items: [
       {
@@ -319,12 +319,12 @@ const _nav = [
   {
     component: CNavTitle,
     name: 'Sales',
-    to: '#',
+    to: '/',
   },
   {
     component: CNavGroup,
     name: 'Sales',
-    to: '#',
+    to: '/',
     icon: <CIcon icon={cilDollar} customClassName="nav-icon" />,
     items: [
       {
@@ -344,12 +344,12 @@ const _nav = [
   {
     component: CNavTitle,
     name: 'Reports',
-    to: '#',
+    to: '/',
   },
   {
     component: CNavGroup,
     name: 'Reports',
-    to: '#',
+    to: '/',
     icon: <CIcon icon={cilSpreadsheet} customClassName="nav-icon" />,
     items: [
       {
@@ -375,12 +375,12 @@ const _nav = [
   {
     component: CNavTitle,
     name: 'Internal System',
-    to: '#',
+    to: '/',
   },
   {
     component: CNavGroup,
     name: 'Dashboard Users',
-    to: '#',
+    to: '/',
     icon: <CIcon icon={cilPeople} customClassName="nav-icon" />,
     items: [
       {
@@ -406,7 +406,7 @@ const _nav = [
   {
     component: CNavGroup,
     name: 'Developers',
-    to: '#',
+    to: '/',
     icon: <CIcon icon={cilCode} customClassName="nav-icon" />,
     items: [
       {
