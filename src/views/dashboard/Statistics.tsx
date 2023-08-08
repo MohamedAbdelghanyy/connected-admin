@@ -8,7 +8,7 @@ import {
   CChartPolarArea,
   CChartRadar,
 } from '@coreui/react-chartjs'
-import DocsLink from '../../../components/DocsLink'
+import DocsLink from '../../components/DocsLink'
 
 const Statistics = () => {
   const random = () => Math.round(Math.random() * 100)
