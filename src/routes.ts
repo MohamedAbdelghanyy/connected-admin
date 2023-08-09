@@ -2,6 +2,7 @@ import React, { ReactNode } from 'react'
 import Statistics from './views/dashboard/Statistics'
 import ListUsers from './views/dashboard/users/ListUsers'
 import CreateUser from './views/dashboard/users/CreateUser'
+import UsersActivityLog from './views/dashboard/users/UsersActivityLog'
 
 import ListCustomers from './views/customers/ListCustomers'
 import CreateCustomer from './views/customers/CreateCustomer'
@@ -60,7 +61,7 @@ const routes = [
   {
     path: '/dashboard/users/activity-logs',
     name: 'Activity Log',
-    component: Blank,
+    component: UsersActivityLog,
   },
   { path: '/customers', name: 'Customers', component: ListCustomers },
   { path: '/customers/create', name: 'Create', component: CreateCustomer },
