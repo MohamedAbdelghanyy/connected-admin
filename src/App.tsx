@@ -1,5 +1,5 @@
 import React, { Component, Suspense } from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import { CSpinner } from '@coreui/react-pro'
 import './scss/style.scss'
 
@@ -11,7 +11,7 @@ const Page404 = React.lazy(() => import('./views/page404/Page404'))
 class App extends Component {
   render(): JSX.Element {
     return (
-      <BrowserRouter>
+      <HashRouter>
         <Suspense fallback={<CSpinner color="primary" />}>
           <Routes>
             <Route path="*" element={<DefaultLayout />} />
@@ -19,7 +19,7 @@ class App extends Component {
             <Route path="/404" element={<Page404 />} />
           </Routes>
         </Suspense>
-      </BrowserRouter>
+      </HashRouter>
     )
   }
 }
