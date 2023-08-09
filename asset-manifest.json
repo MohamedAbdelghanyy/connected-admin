@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/connected-admin/static/css/main.9686b3f5.css",
-    "main.js": "/connected-admin/static/js/main.08889bae.js",
+    "main.js": "/connected-admin/static/js/main.ad258430.js",
     "static/css/840.6425cb10.chunk.css": "/connected-admin/static/css/840.6425cb10.chunk.css",
     "static/js/840.d3636f32.chunk.js": "/connected-admin/static/js/840.d3636f32.chunk.js",
     "static/js/920.d734e539.chunk.js": "/connected-admin/static/js/920.d734e539.chunk.js",
@@ -24,7 +24,7 @@
     "static/media/6.jpg": "/connected-admin/static/media/6.edefb235566ed72a7429.jpg",
     "index.html": "/connected-admin/index.html",
     "main.9686b3f5.css.map": "/connected-admin/static/css/main.9686b3f5.css.map",
-    "main.08889bae.js.map": "/connected-admin/static/js/main.08889bae.js.map",
+    "main.ad258430.js.map": "/connected-admin/static/js/main.ad258430.js.map",
     "840.6425cb10.chunk.css.map": "/connected-admin/static/css/840.6425cb10.chunk.css.map",
     "840.d3636f32.chunk.js.map": "/connected-admin/static/js/840.d3636f32.chunk.js.map",
     "920.d734e539.chunk.js.map": "/connected-admin/static/js/920.d734e539.chunk.js.map",
@@ -38,6 +38,6 @@
   },
   "entrypoints": [
     "static/css/main.9686b3f5.css",
-    "static/js/main.08889bae.js"
+    "static/js/main.ad258430.js"
   ]
 }
