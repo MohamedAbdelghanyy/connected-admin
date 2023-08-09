@@ -6,6 +6,7 @@ import './scss/style.scss'
 // Containers
 const DefaultLayout = React.lazy(() => import('./layout/DefaultLayout'))
 const Login = React.lazy(() => import('./views/login/Login'))
+const Page404 = React.lazy(() => import('./views/page404/Page404'))
 
 class App extends Component {
   render(): JSX.Element {
@@ -15,6 +16,7 @@ class App extends Component {
           <Routes>
             <Route path="*" element={<DefaultLayout />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/404" element={<Page404 />} />
           </Routes>
         </Suspense>
       </BrowserRouter>

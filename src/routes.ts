@@ -1,4 +1,5 @@
 import React, { ReactNode } from 'react'
+
 import Statistics from './views/dashboard/Statistics'
 import ListUsers from './views/dashboard/users/ListUsers'
 import CreateUser from './views/dashboard/users/CreateUser'
@@ -37,6 +38,7 @@ import MostWishlistedItems from './views/reports/most-wishlisted-items'
 
 import DevLog from './views/developers/DevLog'
 import TopActiveCustomers from './views/reports/top-active-customers'
+import Page404 from './views/page404/Page404'
 
 export type route = {
   component?: ReactNode
@@ -53,40 +55,75 @@ const Blank = React.lazy(() => import('./views/blank/Blank'))
  * See {@link https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config GitHub}.
  */
 const routes = [
-  { path: '/', name: 'Dashboard', component: Dashboard },
-  { path: '/dashboard', name: 'Dashboard', component: Dashboard },
+  { path: '/', name: 'Dashboard', component: Dashboard, exact: true },
+  { path: '/dashboard', name: 'Dashboard', component: Dashboard, exact: true },
   { path: '/dashboard/statistics', name: 'Statistics', component: Statistics },
-  { path: '/dashboard/users', name: 'Users', component: ListUsers },
+  {
+    path: '/dashboard/users',
+    name: 'Users',
+    component: ListUsers,
+    exact: true,
+  },
   { path: '/dashboard/users/create', name: 'Create', component: CreateUser },
   {
     path: '/dashboard/users/activity-logs',
     name: 'Activity Log',
     component: UsersActivityLog,
   },
-  { path: '/customers', name: 'Customers', component: ListCustomers },
+  {
+    path: '/customers',
+    name: 'Customers',
+    component: ListCustomers,
+    exact: true,
+  },
   { path: '/customers/create', name: 'Create', component: CreateCustomer },
   {
     path: '/customers/activity-logs',
     name: 'Activity Logs',
     component: CustomersActivityLog,
   },
-  { path: '/vendors', name: 'Merchants', component: ListMerchants },
+  {
+    path: '/vendors',
+    name: 'Merchants',
+    component: ListMerchants,
+    exact: true,
+  },
   { path: '/vendors/create', name: 'Create', component: CreateMerchant },
-  { path: '/items', name: 'Items', component: ListItems },
+  { path: '/items', name: 'Items', component: ListItems, exact: true },
   { path: '/items/create', name: 'Create', component: CreateItem },
-  { path: '/categories', name: 'Categories', component: ListCategories },
+  {
+    path: '/categories',
+    name: 'Categories',
+    component: ListCategories,
+    exact: true,
+  },
   { path: '/categories/create', name: 'Create', component: CreateCategory },
-  { path: '/highlights', name: 'Highlights', component: ListHighlights },
+  {
+    path: '/highlights',
+    name: 'Highlights',
+    component: ListHighlights,
+    exact: true,
+  },
   { path: '/highlights/create', name: 'Create', component: CreateHighlight },
-  { path: '/brands', name: 'Brands', component: ListBrands },
+  { path: '/brands', name: 'Brands', component: ListBrands, exact: true },
   { path: '/brands/create', name: 'Create', component: CreateBrand },
-  { path: '/ads', name: 'Ads', component: ListAds },
+  { path: '/ads', name: 'Ads', component: ListAds, exact: true },
   { path: '/ads/create', name: 'Create', component: CreateAd },
-  { path: '/tags', name: 'Product Tags', component: ListProductTags },
+  {
+    path: '/tags',
+    name: 'Product Tags',
+    component: ListProductTags,
+    exact: true,
+  },
   { path: '/tags/create', name: 'Create', component: CreateProductTag },
-  { path: '/topics', name: 'Topics', component: ListTopics },
+  { path: '/topics', name: 'Topics', component: ListTopics, exact: true },
   { path: '/topics/create', name: 'Create', component: CreateTopic },
-  { path: '/notifications', name: 'Notifications', component: Blank },
+  {
+    path: '/notifications',
+    name: 'Notifications',
+    component: Blank,
+    exact: true,
+  },
   {
     path: '/notifications/push',
     name: 'Push Notifications',
@@ -102,12 +139,17 @@ const routes = [
     name: 'SMS Campaigns',
     component: Blank,
   },
-  { path: '/integrations', name: 'Integrations', component: Blank },
+  {
+    path: '/integrations',
+    name: 'Integrations',
+    component: Blank,
+    exact: true,
+  },
   { path: '/integrations/whatsapp', name: 'Whatsapp', component: Blank },
-  { path: '/sales', name: 'Sales', component: Blank },
+  { path: '/sales', name: 'Sales', component: Blank, exact: true },
   { path: '/sales/leads', name: 'Leads', component: Blank },
   { path: '/sales/whatsapp', name: 'Whatsapp', component: Blank },
-  { path: '/reports', name: 'Reports', component: Blank },
+  { path: '/reports', name: 'Reports', component: Blank, exact: true },
   {
     path: '/reports/top-active-customers',
     name: 'Top Active Customers',
@@ -130,6 +172,7 @@ const routes = [
   { path: '/developers/cache', name: 'Cache', component: Blank },
   { path: '/developers/bugs', name: 'Bugs', component: Blank },
   { path: '/blank', name: 'Blank', component: Blank },
+  { path: '*', name: '404', component: Page404 },
 ]
 
 export default routes
