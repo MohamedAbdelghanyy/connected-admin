@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/connected-admin/static/css/main.9686b3f5.css",
-    "main.js": "/connected-admin/static/js/main.1e5a1330.js",
-    "static/css/930.9f784522.chunk.css": "/connected-admin/static/css/930.9f784522.chunk.css",
-    "static/js/930.b72bfa47.chunk.js": "/connected-admin/static/js/930.b72bfa47.chunk.js",
+    "main.js": "/connected-admin/static/js/main.460f41e5.js",
+    "static/css/940.40694ec5.chunk.css": "/connected-admin/static/css/940.40694ec5.chunk.css",
+    "static/js/940.874e1368.chunk.js": "/connected-admin/static/js/940.874e1368.chunk.js",
     "static/js/496.6cda6c80.chunk.js": "/connected-admin/static/js/496.6cda6c80.chunk.js",
     "static/js/554.f43e2650.chunk.js": "/connected-admin/static/js/554.f43e2650.chunk.js",
     "static/js/863.b10ddf5c.chunk.js": "/connected-admin/static/js/863.b10ddf5c.chunk.js",
@@ -21,9 +21,9 @@
     "static/media/6.jpg": "/connected-admin/static/media/6.edefb235566ed72a7429.jpg",
     "index.html": "/connected-admin/index.html",
     "main.9686b3f5.css.map": "/connected-admin/static/css/main.9686b3f5.css.map",
-    "main.1e5a1330.js.map": "/connected-admin/static/js/main.1e5a1330.js.map",
-    "930.9f784522.chunk.css.map": "/connected-admin/static/css/930.9f784522.chunk.css.map",
-    "930.b72bfa47.chunk.js.map": "/connected-admin/static/js/930.b72bfa47.chunk.js.map",
+    "main.460f41e5.js.map": "/connected-admin/static/js/main.460f41e5.js.map",
+    "940.40694ec5.chunk.css.map": "/connected-admin/static/css/940.40694ec5.chunk.css.map",
+    "940.874e1368.chunk.js.map": "/connected-admin/static/js/940.874e1368.chunk.js.map",
     "496.6cda6c80.chunk.js.map": "/connected-admin/static/js/496.6cda6c80.chunk.js.map",
     "554.f43e2650.chunk.js.map": "/connected-admin/static/js/554.f43e2650.chunk.js.map",
     "863.b10ddf5c.chunk.js.map": "/connected-admin/static/js/863.b10ddf5c.chunk.js.map",
@@ -32,6 +32,6 @@
   },
   "entrypoints": [
     "static/css/main.9686b3f5.css",
-    "static/js/main.1e5a1330.js"
+    "static/js/main.460f41e5.js"
   ]
 }
